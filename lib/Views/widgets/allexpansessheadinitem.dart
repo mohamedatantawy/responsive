@@ -1,38 +1,43 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:projectresponsive2/constant.dart';
 
 class Allexpansessheadinitem extends StatelessWidget {
-  const Allexpansessheadinitem({super.key, required this.image});
+  const Allexpansessheadinitem(
+      {super.key,
+      required this.image,
+      required this.color1,
+      required this.color2, this.color});
   final String image;
+  final Color color1;
+  final Color color2;
+  final Color? color;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
         Container(
-          width: 60,
+          width:60,
           height: 60,
-          decoration: const ShapeDecoration(
-            color: Color(0xffFAFAFA),
-            shape: OvalBorder(),
+          decoration: ShapeDecoration(
+            color: color1,
+            shape:const OvalBorder(),
           ),
           child: Center(
             child: SvgPicture.asset(
               image,
+              colorFilter: ColorFilter.mode(color??kprimaycolor, BlendMode.srcIn),
               height: 23,
               width: 23,
             ),
           ),
         ),
-        const Expanded(
-          child: SizedBox(
-            width: 40,
-          ),
-        ),
+       const Spacer(),
         Transform.rotate(
           angle: -1.5707 * 2,
-          child: const Icon(
+          child: Icon(
             Icons.arrow_back_ios,
-            color: Colors.black,
+            color: color2,
           ),
         )
       ],

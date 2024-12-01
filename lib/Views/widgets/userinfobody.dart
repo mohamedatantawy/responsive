@@ -1,28 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:projectresponsive2/models/userinfomodels.dart';
 import 'package:projectresponsive2/utils/app_styles.dart';
 
 class userinfobody extends StatelessWidget {
-  const userinfobody({super.key, required this.title, required this.subtitle, required this.image});
-  final String title;
-  final String subtitle;
-  final String image;
+  const userinfobody(
+      {super.key, required this.userinfomodels,
+   });
+  final Userinfomodels userinfomodels;
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+      margin:const EdgeInsets.symmetric(vertical:12, horizontal: 8),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
-        color: Color(0xffFAFAFA),
+        color:const Color(0xffFAFAFA),
       ),
       child: ListTile(
-       leading:  SvgPicture.asset(image),
+        leading: SvgPicture.asset(userinfomodels.image),
         title: Text(
-          title,
+          userinfomodels.title,
           style: AppStyles.stylesemibold16,
         ),
         subtitle: Text(
-          subtitle,
+          userinfomodels.subtitle,
           style: AppStyles.styleregular12,
         ),
       ),

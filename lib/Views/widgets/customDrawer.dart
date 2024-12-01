@@ -6,6 +6,7 @@ import 'package:projectresponsive2/Views/widgets/listcatageofDrawer.dart';
 import 'package:projectresponsive2/Views/widgets/userinfobody.dart';
 import 'package:projectresponsive2/constant.dart';
 import 'package:projectresponsive2/models/catagesDrawermodels.dart';
+import 'package:projectresponsive2/models/userinfomodels.dart';
 import 'package:projectresponsive2/utils/app_images.dart';
 import 'package:projectresponsive2/utils/app_styles.dart';
 
@@ -22,22 +23,25 @@ class _CustomdrawerState extends State<Customdrawer> {
     return Container(
       width: 400,
       color: Colors.white,
-      child: const CustomScrollView(
+      child:  CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
+       const   SliverToBoxAdapter(
             child: SizedBox(
               height: 50,
             ),
           ),
           SliverToBoxAdapter(
             child: userinfobody(
-              title: 'Lekan Okeowo',
-              subtitle: 'demo@gmail.com',
-              image: Assets.imageFrame1,
+              userinfomodels: Userinfomodels(image:  Assets.imageFrame1,
+              title: 'Lekan Okeowo' ,
+              subtitle:'demo@gmail.com' ),
+              // title: 'Lekan Okeowo',
+              // subtitle: 'demo@gmail.com',
+              // image: Assets.imageFrame1,
             ),
           ),
-          ListCatageofDrawer(),
-          SliverFillRemaining(
+        const  ListCatageofDrawer(),
+        const  SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               children: [

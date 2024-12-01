@@ -12,7 +12,7 @@ class Dashboerdview extends StatelessWidget {
       body: Adaptivelayout(
         mobilelayout: (context) => SizedBox(),
         tabletlayout: (context) => SizedBox(),
-        desklayout: (context) => Desklayout(),
+        desklayout: (context) =>const Desklayout(),
       ),
     );
   }
