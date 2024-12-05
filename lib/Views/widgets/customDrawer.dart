@@ -23,9 +23,9 @@ class _CustomdrawerState extends State<Customdrawer> {
     return Container(
       width: 400,
       color: Colors.white,
-      child:  CustomScrollView(
+      child: const CustomScrollView(
         slivers: [
-       const   SliverToBoxAdapter(
+          SliverToBoxAdapter(
             child: SizedBox(
               height: 50,
             ),
@@ -40,8 +40,8 @@ class _CustomdrawerState extends State<Customdrawer> {
               // image: Assets.imageFrame1,
             ),
           ),
-        const  ListCatageofDrawer(),
-        const  SliverFillRemaining(
+          ListCatageofDrawer(),
+          SliverFillRemaining(
             hasScrollBody: false,
             child: Column(
               children: [

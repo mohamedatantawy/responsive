@@ -11,14 +11,14 @@ class AllExpancess extends StatelessWidget {
     return const customBackgroundcontainer(
       child: Column(
         children: [
-          all_expancessHeader(
+          HeadertheSection(
             numberoficonshow: 0,
             title: 'All Expenses',
           ),
           SizedBox(
             height: 16,
           ),
-         allExpansessItemRow()
+          allExpansessItemRow()
         ],
       ),
     );

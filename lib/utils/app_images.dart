@@ -8,7 +8,7 @@ class Assets {
 
   /// Assets for imageCardReceive  Copy
   /// assets/image/card-receive - Copy.svg
-  static const String imageCardReceiveCopy = "assets/image/card-receive - Copy.svg";
+ 
 
   /// Assets for imageCardSend
   /// assets/image/card-send.svg
@@ -16,7 +16,7 @@ class Assets {
 
   /// Assets for imageCardSend  Copy
   /// assets/image/card-send - Copy.svg
-  static const String imageCardSendCopy = "assets/image/card-send - Copy.svg";
+
 
   /// Assets for imageCategory2
   /// assets/image/category-2.svg
@@ -50,9 +50,9 @@ class Assets {
   /// assets/image/logout.svg
   static const String imageLogout = "assets/image/logout.svg";
 
-  /// Assets for imageMask group
-  /// assets/image/Mask group.svg
-  static const String imageMaskgroup = "assets/image/Mask group.svg";
+  /// Assets for imageMaskgroup
+  /// assets/image/Maskgroup.png
+  static const String imageMaskgroup = "assets/image/Maskgroup.png";
 
   /// Assets for imageMoneys
   /// assets/image/moneys.svg
@@ -60,7 +60,7 @@ class Assets {
 
   /// Assets for imageMoneys  Copy
   /// assets/image/moneys - Copy.svg
-  static const String imageMoneysCopy = "assets/image/moneys - Copy.svg";
+
 
   /// Assets for imageSetting2
   /// assets/image/setting-2.svg

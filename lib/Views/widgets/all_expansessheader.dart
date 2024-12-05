@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:projectresponsive2/constant.dart';
 import 'package:projectresponsive2/utils/app_styles.dart';
 
-class all_expancessHeader extends StatelessWidget {
-  const all_expancessHeader({
+class HeadertheSection extends StatelessWidget {
+  const HeadertheSection({
     super.key,
     required this.title,
     required this.numberoficonshow,
@@ -19,12 +19,14 @@ class all_expancessHeader extends StatelessWidget {
           title,
           style: AppStyles.stylesemibold20,
         ),
-       const Expanded(child: SizedBox()),
+        const Expanded(child: SizedBox()),
         numberoficonshow == 0
             ? const IconmonthofHeader()
-            : numberoficonshow == 1
-                ? const icon_quickinvocie()
-                : Container(),
+            : numberoficonshow == 1?
+             const icon_quickinvocie() :
+                numberoficonshow==2?
+               const treanscationhistory():
+              const SizedBox(),
       ],
     );
   }
@@ -49,7 +51,14 @@ class icon_quickinvocie extends StatelessWidget {
         ));
   }
 }
+ class treanscationhistory extends StatelessWidget {
+  const treanscationhistory({super.key});
 
+  @override
+  Widget build(BuildContext context) {
+    return const Text('See all',style: AppStyles.stylemedium16,);
+  }
+}
 class IconmonthofHeader extends StatelessWidget {
   const IconmonthofHeader({
     super.key,
