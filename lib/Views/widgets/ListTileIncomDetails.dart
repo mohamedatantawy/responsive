@@ -23,11 +23,11 @@ class ListtileIncome extends StatelessWidget {
       ),
       title: Text(
         income.name,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
       trailing: Text(
         income.num,
-        style: AppStyles.styleRegular16,
+        style: AppStyles.styleRegular16(context),
       ),
     );
   }

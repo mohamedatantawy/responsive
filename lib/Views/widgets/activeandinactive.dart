@@ -19,7 +19,7 @@ class inactiveitem extends StatelessWidget {
       leading: SvgPicture.asset(image),
       title: Text(
         title,
-        style: AppStyles.stylemedium16,
+        style: AppStyles.styleMedium16(context),
       ),
     );
   }
@@ -39,7 +39,7 @@ class activeitem extends StatelessWidget {
       leading: SvgPicture.asset(catagesdrawermodels.image),
       title: Text(
         catagesdrawermodels.title,
-        style: AppStyles.stylebold16,
+        style: AppStyles.styleBold16(context),
       ),
       trailing: Container(
         width: 4,

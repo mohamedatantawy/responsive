@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:projectresponsive2/Views/widgets/Dotindiecator.dart';
 import 'package:projectresponsive2/Views/widgets/MyCardpageView.dart';
 import 'package:projectresponsive2/Views/widgets/all_expansessheader.dart';
@@ -42,13 +41,13 @@ class _Mycard_secationState extends State<Mycard_secation> {
           pageController: pageController,
         ),
         const SizedBox(
-          height: 20,
+          height: 15,
         ),
         Dotindiecator(
           currentindex: cuurentindex,
         ),
         const SizedBox(
-          height: 20,
+          height: 15,
         ),
        
       ],
@@ -83,22 +82,25 @@ class treansaction_history extends StatelessWidget {
         const HeadertheSection(
             title: 'Treanseation History', numberoficonshow: 2),
         const SizedBox(
-          height: 20,
+          height: 15,
         ),
-        const Text(
+         Text(
           '13 Apirl 2022',
-          style: AppStyles.styleregular14,
+          style: AppStyles.styleRegular14(context),
         ),
-        ListView.builder(
-         shrinkWrap: true,
-          itemCount: trans.length,
-          itemBuilder: (context, index) {
-            return  CustomListTile(
-            transactionmodel: trans[index],
-          );
-          },
+        Column(
+          children:trans.map((e) => CustomListTile(transactionmodel: e)).toList(),
+        )
+        // ListView.builder(
+        //  shrinkWrap: true,
+        //   itemCount: trans.length,
+        //   itemBuilder: (context, index) {
+        //     return  CustomListTile(
+        //     transactionmodel: trans[index],
+        //   );
+        //   },
           
-        ),
+        // ),
        
       ],
     );

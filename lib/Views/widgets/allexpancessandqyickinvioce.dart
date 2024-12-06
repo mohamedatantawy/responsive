@@ -9,17 +9,14 @@ class AllexpancessAndQuickinVoice extends StatelessWidget {
   final bool ismobile;
   @override
   Widget build(BuildContext context) {
-    return  Expanded(
-      flex: ismobile ?1:2,
-      child: Column(
-        children: [
-          AllExpancess(),
-          SizedBox(
-            height: 10,
-          ),
-          Quickinvoicebody(),
-        ],
-      ),
+    return const Column(
+      children: [
+        AllExpancess(),
+        SizedBox(
+          height: 10,
+        ),
+        Quickinvoicebody(),
+      ],
     );
   }
 }

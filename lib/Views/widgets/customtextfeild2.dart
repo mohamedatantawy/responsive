@@ -20,7 +20,7 @@ class Customtextfeild2 extends StatelessWidget {
             )),
         child: Text(
           'Send Money',
-          style: AppStyles.styleregular18.copyWith(
+          style: AppStyles.styleRegular18(context).copyWith(
             fontWeight: FontWeight.w600,
             color: colortext ?? Colors.white,
           ),

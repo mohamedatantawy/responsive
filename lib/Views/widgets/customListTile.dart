@@ -21,16 +21,16 @@ class CustomListTile extends StatelessWidget {
         title: Text(
           transactionmodel.tilte,
           //'Cash Withdrawal',
-          style: AppStyles.stylesemibold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         subtitle: Text(
           transactionmodel.date,
           // '13 Apirl 2022',
-          style: AppStyles.styleregular14,
+          style: AppStyles.styleRegular14(context),
         ),
         trailing: Text(
           transactionmodel.price,
-          style: AppStyles.stylesemibold24.copyWith(
+          style: AppStyles.styleSemiBold24(context).copyWith(
             color: transactionmodel.isRed ? Colors.red : null,
           ),
         ),

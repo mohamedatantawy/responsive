@@ -17,7 +17,7 @@ class HeadertheSection extends StatelessWidget {
       children: [
         Text(
           title,
-          style: AppStyles.stylesemibold20,
+          style: AppStyles.styleSemiBold20(context),
         ),
         const Expanded(child: SizedBox()),
         numberoficonshow == 0
@@ -56,7 +56,7 @@ class icon_quickinvocie extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Text('See all',style: AppStyles.stylemedium16,);
+    return  Text('See all',style: AppStyles.styleMedium16(context),);
   }
 }
 class IconmonthofHeader extends StatelessWidget {
@@ -78,9 +78,9 @@ class IconmonthofHeader extends StatelessWidget {
           )),
       child: Row(
         children: [
-          const Text(
+           Text(
             'Monthly',
-            style: AppStyles.stylemedium16,
+            style: AppStyles.styleMedium16(context),
           ),
           Padding(
             padding: const EdgeInsets.only(left: 4),

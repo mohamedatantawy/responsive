@@ -25,7 +25,7 @@ final Allexpanssesmodels allexpanssesmodels;
         fit: BoxFit.scaleDown,
         child: Text(
           allexpanssesmodels.title,
-          style: AppStyles.styleRegular16,
+          style: AppStyles.styleRegular16(context),
         ),
       ),
     );
@@ -70,7 +70,7 @@ class inactiveitemExpancess extends StatelessWidget {
         ),
           Text(
             allexpanssesmodels.title,
-            style: AppStyles.stylesemibold16,
+            style: AppStyles.styleSemiBold16(context),
           ),
           const  Expanded(
             child:  SizedBox(
@@ -79,7 +79,7 @@ class inactiveitemExpancess extends StatelessWidget {
           ),
           Text(
             allexpanssesmodels.data,
-            style: AppStyles.styleregular14,
+            style: AppStyles.styleRegular14(context),
           ),
           const  Expanded(
             child:  SizedBox(
@@ -88,7 +88,7 @@ class inactiveitemExpancess extends StatelessWidget {
           ),
           Text(
             allexpanssesmodels.price,
-            style: AppStyles.stylesemibold24,
+            style: AppStyles.styleSemiBold24(context),
           ),
         ],
       ),
@@ -133,7 +133,7 @@ class activeitemExpancess extends StatelessWidget {
          ),
           Text(
             allexpanssesmodels.title,
-            style: AppStyles.stylesemibold16.copyWith(
+            style: AppStyles.styleSemiBold16(context).copyWith(
               color: Colors.white,
             ),
           ),
@@ -144,7 +144,7 @@ class activeitemExpancess extends StatelessWidget {
           ),
           Text(
             allexpanssesmodels.data,
-            style: AppStyles.styleregular14.copyWith(color: Colors.grey),
+            style: AppStyles.styleRegular14(context).copyWith(color: Colors.grey),
           ),
           const  Expanded(
             child:  SizedBox(
@@ -153,7 +153,7 @@ class activeitemExpancess extends StatelessWidget {
           ),
           Text(
             allexpanssesmodels.price,
-            style: AppStyles.stylesemibold24.copyWith(color: Colors.white),
+            style: AppStyles.styleSemiBold24(context).copyWith(color: Colors.white),
           ),
         ],
       ),

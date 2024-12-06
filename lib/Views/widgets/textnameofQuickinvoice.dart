@@ -13,7 +13,7 @@ class textnameofquickinvoice extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       name,
-      style: AppStyles.stylemedium16,
+      style: AppStyles.styleMedium16(context),
     );
   }
 }

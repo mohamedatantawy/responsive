@@ -20,11 +20,11 @@ class userinfobody extends StatelessWidget {
         leading: SvgPicture.asset(userinfomodels.image),
         title: Text(
           userinfomodels.title,
-          style: AppStyles.stylesemibold16,
+          style: AppStyles.styleSemiBold16(context),
         ),
         subtitle: Text(
           userinfomodels.subtitle,
-          style: AppStyles.styleregular12,
+          style: AppStyles.styleRegular12(context),
         ),
       ),
     );
