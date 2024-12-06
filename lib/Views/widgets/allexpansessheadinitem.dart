@@ -16,19 +16,28 @@ class Allexpansessheadinitem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Container(
-          width:60,
-          height: 60,
-          decoration: ShapeDecoration(
-            color: color1,
-            shape:const OvalBorder(),
-          ),
-          child: Center(
-            child: SvgPicture.asset(
-              image,
-              colorFilter: ColorFilter.mode(color??kprimaycolor, BlendMode.srcIn),
-              height: 23,
-              width: 23,
+        Flexible(
+          child: ConstrainedBox(
+            constraints:const BoxConstraints(
+              maxWidth: 60,
+            ),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Container(
+               
+                decoration: ShapeDecoration(
+                  color: color1,
+                  shape:const OvalBorder(),
+                ),
+                child: Center(
+                  child: SvgPicture.asset(
+                    image,
+                    colorFilter: ColorFilter.mode(color??kprimaycolor, BlendMode.srcIn),
+                    height: 23,
+                    width: 23,
+                  ),
+                ),
+              ),
             ),
           ),
         ),

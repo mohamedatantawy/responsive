@@ -1,8 +1,11 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:projectresponsive2/Views/dashboerdView.dart';
 
 void main() {
-  runApp(const Dashboerd());
+  runApp(DevicePreview(
+    enabled: true,
+    builder:(context)=> const Dashboerd()));
 }
 
 class Dashboerd extends StatelessWidget {

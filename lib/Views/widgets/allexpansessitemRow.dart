@@ -51,7 +51,7 @@ class _allExpansessItemRowState extends State<allExpansessItemRow> {
                   updataindex(count);
                 },
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
+                padding: const EdgeInsets.symmetric(horizontal: 4),
                 child: AllExpancessitem(
                     allexpanssesmodels: data,
                     isactive: isselect == count,

@@ -17,9 +17,13 @@ class inactiveitem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(image),
-      title: Text(
-        title,
-        style: AppStyles.styleMedium16(context),
+      title: FittedBox(
+         fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          title,
+          style: AppStyles.styleMedium16(context),
+        ),
       ),
     );
   }
@@ -37,9 +41,13 @@ class activeitem extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: SvgPicture.asset(catagesdrawermodels.image),
-      title: Text(
-        catagesdrawermodels.title,
-        style: AppStyles.styleBold16(context),
+      title: FittedBox(
+         fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+        child: Text(
+          catagesdrawermodels.title,
+          style: AppStyles.styleBold16(context),
+        ),
       ),
       trailing: Container(
         width: 4,

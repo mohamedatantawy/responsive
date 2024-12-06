@@ -18,13 +18,21 @@ class userinfobody extends StatelessWidget {
       ),
       child: ListTile(
         leading: SvgPicture.asset(userinfomodels.image),
-        title: Text(
-          userinfomodels.title,
-          style: AppStyles.styleSemiBold16(context),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+          child: Text(
+            userinfomodels.title,
+            style: AppStyles.styleSemiBold16(context),
+          ),
         ),
-        subtitle: Text(
-          userinfomodels.subtitle,
-          style: AppStyles.styleRegular12(context),
+        subtitle: FittedBox(
+           fit: BoxFit.scaleDown,
+          alignment: AlignmentDirectional.centerStart,
+          child: Text(
+            userinfomodels.subtitle,
+            style: AppStyles.styleRegular12(context),
+          ),
         ),
       ),
     );
